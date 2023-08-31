@@ -1,9 +1,9 @@
 # EE405A_2023
 KAIST EE405A 2023
 
-# Week 1
+## Week 1
 
-# Week 2 - Ubuntu Installation & ROS
+## Week 2 - Ubuntu Installation & ROS
 [Lecture Note Week3](https://www.dropbox.com/s/e9p2nmgp4t0f6lj/%5BEE405%5D%20Robotics%20Operating%20System%20%28ROS%29_1.pdf?dl=0)
 - Brief tips on installing Ubuntu (Linux-based OS)
 - Understand the Robotics Operating System (ROS) (1)
@@ -11,7 +11,7 @@ KAIST EE405A 2023
 - Run ROS tutorial
 - Learn ROS programming
 
-# Week 3 - Simulation
+## Week 3 - Simulation
 [Lecture Note Week3](https://www.dropbox.com/s/e9p2nmgp4t0f6lj/%5BEE405%5D%20Robotics%20Operating%20System%20%28ROS%29_1.pdf?dl=0)
 - Gazebo
   
