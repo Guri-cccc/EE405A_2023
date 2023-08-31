@@ -17,7 +17,7 @@ KAIST EE405A 2023
 - Robot model
   - URDF
   - World
-- Control car model in simulation
+- Control car model in the simulation
   
 ## Week 4 - Vehicle Control
 <!-- [Lecture Note Week4](https://www.dropbox.com/s/05o76sm8lu2nwb5/%5BEE405A%5D%20Vehicle_Control.pdf?dl=0) -->
@@ -64,9 +64,13 @@ KAIST EE405A 2023
  
 ## Week 11 - Perception (2)
 <!-- [Lecture Note Week11](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- Sensor fusion
+- Depth estimation using vision
+    - Streo vision
+    - Other methods
 - Post processing
-    - cost map generation
+    - IPM (Inverse Perspective Mapping)
+    - RGB-pointcloud
+    - Cost map generation
  
 ## Week 12 - Strategy for racing
 <!-- [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
