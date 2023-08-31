@@ -47,10 +47,7 @@ KAIST EE405A 2023
 ## Week 9 - Visual SLAM
 <!-- [Lecture Note Week9](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - Visual Odometry
-- Models
-    - Links
-    - Joints
-    - Sensor plugins
+- ORB-SLAM
  
 ## Week 10 - Perception (1)
 <!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
