@@ -68,10 +68,10 @@ KAIST EE405A 2023
 [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0)
 - Indy autonomous challenge
 
-## Week 13 - Final project preparation (Racing)
+## Week 13 - Final project preparation (racing)
 
-## Week 14 - Final project preparation (Racing)
+## Week 14 - Final project preparation (racing)
 
-## Week 15 - Final racing day
+## Week 15 - Final race
 
 ## Week 15 - Final exam week
