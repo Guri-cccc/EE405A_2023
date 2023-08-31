@@ -21,9 +21,6 @@ KAIST EE405A 2023
   
 ## Week 4 - Vehicle Control
 <!-- [Lecture Note Week4](https://www.dropbox.com/s/05o76sm8lu2nwb5/%5BEE405A%5D%20Vehicle_Control.pdf?dl=0) -->
-- Understand the Robotics Operating System (ROS) (2)
-    - ROS tools: rviz, rosbag
-    - ROS message types
 
 - Learn how to design the vehicle controller
     - Vehicle kinematics model
@@ -39,7 +36,7 @@ KAIST EE405A 2023
 
 ## Week 6 - Motion planning (1)
 <!-- [Lecture Note Week6](https://www.dropbox.com/s/yi5amtnppyxztj5/%5BEE405A%5D%20Mapping%26Localization.pdf?dl=0) -->
-- Cost map generation
+- Cost map generation for simulation environment
 
 ## Week 7 - Motion planning (2)
 <!-- [Lecture Note Week7](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
