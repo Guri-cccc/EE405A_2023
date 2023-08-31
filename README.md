@@ -38,7 +38,7 @@ KAIST EE405A 2023
 - Cost map generation
 
 ## Week 7 - Motion planning (2)
-[Lecture Note Week7](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0)
+<!-- [Lecture Note Week7](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - A*
 
 ## Week 8 - Midterm exam week
