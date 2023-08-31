@@ -14,6 +14,10 @@ KAIST EE405A 2023
 ## Week 3 - Simulation
 <!-- [Lecture Note Week3](https://www.dropbox.com/s/e9p2nmgp4t0f6lj/%5BEE405%5D%20Robotics%20Operating%20System%20%28ROS%29_1.pdf?dl=0) -->
 - Gazebo
+- Robot model
+  - URDF
+  - World
+- Control car model in simulation
   
 ## Week 4 - Vehicle Control
 <!-- [Lecture Note Week4](https://www.dropbox.com/s/05o76sm8lu2nwb5/%5BEE405A%5D%20Vehicle_Control.pdf?dl=0) -->
