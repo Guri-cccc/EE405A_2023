@@ -57,8 +57,10 @@ KAIST EE405A 2023
  
 ## Week 10 - Perception (1)
 <!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- LiDAR
-- Vision
+- LiDAR based perception
+    - Object detection
+    - Segmentation
+- Camera based perception
     - Object detection
     - Segmentation
  
