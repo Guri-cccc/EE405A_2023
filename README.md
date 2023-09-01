@@ -34,13 +34,22 @@ KAIST EE405A 2023
     - Electronics
     - Chassis -->
 
-## Week 6 - Motion planning (1)
+## Week 6 - Motion Planning (1)
 <!-- [Lecture Note Week6](https://www.dropbox.com/s/yi5amtnppyxztj5/%5BEE405A%5D%20Mapping%26Localization.pdf?dl=0) -->
-- Cost map generation for simulation environment
+- Occupancy grid map
+- Cost map generation
+- Collision checking
 
-## Week 7 - Motion planning (2)
+## Week 7 - Motion Planning (2)
 <!-- [Lecture Note Week7](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- A*
+- Motion planning methods
+  - Graph-based approaches
+  - Sampling-based approaches
+  - Motion primitive-based approaches
+- Algorithms
+  - A* algorithm
+  - Rapidly Exploring Random Tree (RRT)
+  - Motion primitive-based path planning
 
 ## Week 8 - Midterm exam week
  
@@ -51,21 +60,21 @@ KAIST EE405A 2023
  
 ## Week 10 - Perception (1)
 <!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- LiDAR based perception
+- LiDAR-based perception
     - Object detection
     - Segmentation
-- Camera based perception
+- Camera-based perception
     - Object detection
     - Segmentation
  
 ## Week 11 - Perception (2)
 <!-- [Lecture Note Week11](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - Depth estimation using vision
-    - Streo vision
+    - Stereo vision
     - Other methods
-- Post processing
+- Post-processing
     - IPM (Inverse Perspective Mapping)
-    - RGB-pointcloud
+    - RGB-point cloud
     - Cost map generation
  
 ## Week 12 - Strategy for racing
