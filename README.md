@@ -5,7 +5,7 @@ KAIST EE405A 2023
 
 ## Week 2 - Ubuntu Installation & ROS
 [Lecture Note](Week2/Materials/test_package) <br/>
-[Lecture Note (calss introduction)](/[EE405]Introduction.pdf) 
+[Lecture Note (class introduction)](/[EE405]Introduction.pdf) 
 - Brief tips on installing Ubuntu (Linux-based OS)
 - Understand the Robotics Operating System (ROS) (1)
 - Install & Setup ROS
