@@ -20,6 +20,7 @@ KAIST EE405A 2023
   - URDF
   - World
 - Control car model in the simulation
+- Sensor inputs
   
 ## Week 4 - Vehicle Control
 <!-- [Lecture Note Week4](https://www.dropbox.com/s/05o76sm8lu2nwb5/%5BEE405A%5D%20Vehicle_Control.pdf?dl=0) -->
