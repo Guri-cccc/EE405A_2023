@@ -13,7 +13,7 @@ KAIST EE405A 2023
 - Learn ROS programming
 
 ## Week 3 - Simulation
-[Lecture Note Week3](Week3/[EE405]GAZEBO_SImulation.pdf) <br/>
+[Lecture Note](Week3/[EE405]GAZEBO_SImulation.pdf) <br/>
 [F1-tenth Simulatior github](https://github.com/Guri-cccc/EE405A-2023-F1-simulation.git)
 - Gazebo
 - Robot model
