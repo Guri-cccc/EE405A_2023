@@ -24,7 +24,7 @@ KAIST EE405A 2023
   
 ## Week 4 - Vehicle Control
 <!-- [Lecture Note Week4](https://www.dropbox.com/s/05o76sm8lu2nwb5/%5BEE405A%5D%20Vehicle_Control.pdf?dl=0) -->
-
+[Lecture Note (Vehicle Control)](Week4/[EE405]Vehicle_Control.pdf) 
 - Learn how to design the vehicle controller
     - Vehicle kinematics model
     - Longitudinal controller using PID control
