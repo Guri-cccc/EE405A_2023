@@ -32,7 +32,7 @@ def normalize_angle(angle):
 # Global2Local
 def global2local(ego_x, ego_y, ego_yaw, x_list, y_list):
     """
-    TODO 1.
+    TODO
     Transform from global to local coordinate w.r.t. ego vehicle's current pose (x, y, yaw).
         - x_list, y_list               : global coordinate trajectory.
         - ego_x, ego_y, ego_yaw        : ego vehicle's current pose.
@@ -46,7 +46,7 @@ def global2local(ego_x, ego_y, ego_yaw, x_list, y_list):
 # Find nearest point
 def find_nearest_point(ego_x, ego_y, x_list, y_list):
     """
-    TODO 2.
+    TODO
     Find the nearest distance(near_dist) and its index(near_ind) w.r.t. current position (ego_x,y) and given trajectory (x_list,y_list).
         - Use 'calc_dist' function to calculate distance.
         - Use np.argmin for finding the index whose value is minimum.
@@ -60,7 +60,7 @@ def find_nearest_point(ego_x, ego_y, x_list, y_list):
 # Calculate Error
 def calc_error(ego_x, ego_y, ego_yaw, x_list, y_list, wpt_look_ahead=0):
     """
-    TODO 3.
+    TODO
     1. Transform from global to local coordinate trajectory.
     2. Find the nearest waypoint.
     3. Set lookahead waypoint.
@@ -84,11 +84,9 @@ def calc_error(ego_x, ego_y, ego_yaw, x_list, y_list, wpt_look_ahead=0):
 
     # 4. Calculate errors
     error_yaw = 0
-
     error_yaw = normalize_angle(error_yaw) # Normalize angle to [-pi, +pi]
     error_y   = 0
     
-
     return error_y, error_yaw
 
 class WaypointFollower():
@@ -110,8 +108,8 @@ class WaypointFollower():
         self.wpt_look_ahead = 0   # [index]
 
         # Pub/Sub
-        self.pub_command = rospy.Publisher('/control', AckermannDriveStamped, queue_size=5)
-        self.sub_odom    = rospy.Subscriber('/simulation/bodyOdom', Odometry, self.callback_odom)
+        self.pub_command = rospy.Publisher('control', AckermannDriveStamped, queue_size=5)
+        self.sub_odom    = rospy.Subscriber('simulation/bodyOdom', Odometry, self.callback_odom)
 
     def callback_odom(self, msg):
         """
@@ -129,7 +127,7 @@ class WaypointFollower():
     # Controller
     def steer_control(self, error_y, error_yaw):
         """
-        TODO 4.
+        TODO
         Implement a steering controller (PID controller or Pure pursuit or Stanley method).
         You can use not only error_y, error_yaw, but also other input arguments for this controller if you want.
         """
@@ -142,7 +140,7 @@ class WaypointFollower():
 
     def speed_control(self, error_v):
         """
-        TODO 5.
+        TODO
         Implement a speed controller (PID controller).
         You can use not only error_v, but also other input arguments for this controller if you want.
         """
@@ -167,6 +165,10 @@ def main():
     csv_data = pd.read_csv(WPT_CSV_PATH, sep=',', header=None)
     wpts_x = csv_data.values[:,0]
     wpts_y = csv_data.values[:,1]
+    
+    # List to evaluate performance
+    error_y_data = []
+    error_v_data = []
 
     print("loaded wpt :", wpts_x.shape, wpts_y.shape)
 
@@ -186,6 +188,10 @@ def main():
         # Longitudinal error calculation (speed error)
         error_v = wpt_control.target_speed - ego_vx
 
+        # Log errors
+        error_y_data.append(error_y)
+        error_v_data.append(error_v)
+
         # Control
         steer_cmd = wpt_control.steer_control(error_y, error_yaw)
         throttle_cmd = wpt_control.speed_control(error_v)
@@ -193,7 +199,7 @@ def main():
         # Publish command
         wpt_control.publish_command(steer_cmd, throttle_cmd)
 
-        rospy.loginfo("Commands: (steer=%.3f, accel=%.3f). Errors: (CrossTrackError=%.3f, YawError=%.3f, SpeedError=%.3f)." %(steer_cmd, throttle_cmd, error_y, error_yaw, error_v))
+        rospy.loginfo("Commands: (steer=%.3f, accel=%.3f). Errors: (CrossTrack=%.3f, Yaw=%.3f, Speed=%.3f). Ave. Errors ((CrossTrack=%.3f, Speed=%.3f)) ." %(steer_cmd, throttle_cmd, error_y, error_yaw, error_v, np.mean(error_y_data), np.mean(error_v_data)))
         wpt_control.rate.sleep()
 
 
