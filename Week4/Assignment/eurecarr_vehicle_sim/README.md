@@ -2,26 +2,6 @@
 
 A simple ROS based car dynamics simulator.
 
-## Install ROS
-
-Follow either of the following.
-
-### Official Documentation
-
-`Melodic` with `Ubuntu 18.04` is recommended.\
-Reference: http://wiki.ros.org/melodic/Installation/Ubuntu
-
-### Convenience Install Script
-Using scripts located at `etc/` of this repository, depending on you Ubuntu version, run
-
-- Ubuntu 18.04
-> `sudo chmod 755 ./install_ros_melodic && bash ./install_ros_melodic.sh`
-- Ubuntu 16.04
-> `sudo chmod 755 ./install_ros_kinetic && bash ./install_ros_kinetic.sh`
-
-Note, aliases are setup in your `~/.bashrc`.\
-To edit, run `gedit ~/.bashrc`.
-
 ## Download the Code
 
 Copy & paste this package at your catkin workspace (~/catkin_ws).
