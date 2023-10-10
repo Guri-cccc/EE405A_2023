@@ -61,6 +61,9 @@ def find_nearest_point(ego_x, ego_y, x_list, y_list):
 def calc_error(ego_x, ego_y, ego_yaw, x_list, y_list, wpt_look_ahead=0):
     """
     TODO
+    Local coordinate approach
+    (!It doesn't matter if you implement the global coordinates approach.)
+    (!Just return the cross-track and heading errors.)
     1. Transform from global to local coordinate trajectory.
     2. Find the nearest waypoint.
     3. Set lookahead waypoint.
@@ -79,7 +82,7 @@ def calc_error(ego_x, ego_y, ego_yaw, x_list, y_list, wpt_look_ahead=0):
     # 2. Find the nearest waypoint
     _, near_ind = find_nearest_point(ego_x, ego_y, x_list, y_list)
 
-    # 3. Set lookahead waypoint (index of waypoint trajectory)
+    # 3. Set lookahead waypoint (index increment of waypoint trajectory)
     lookahead_wpt_ind = -1
 
     # 4. Calculate errors
@@ -188,9 +191,10 @@ def main():
         # Longitudinal error calculation (speed error)
         error_v = wpt_control.target_speed - ego_vx
 
-        # Log errors
-        error_y_data.append(error_y)
-        error_v_data.append(error_v)
+        # Log errors (errors w.r.t. the closest point)
+        error_y_log, _ = calc_error(ego_x, ego_y, ego_yaw, wpts_x, wpts_y, wpt_look_ahead=0)
+        error_y_data.append(abs(error_y_log))
+        error_v_data.append(abs(error_v))
 
         # Control
         steer_cmd = wpt_control.steer_control(error_y, error_yaw)
