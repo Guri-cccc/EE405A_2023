@@ -34,7 +34,7 @@ class SimulateStep(object):
         Initial conditions
         '''
         self.x0          =  0.
-        self.y0          = -0.5
+        self.y0          =  0.
         self.yaw0        =  0.
         self.vx0         =  0.
 
