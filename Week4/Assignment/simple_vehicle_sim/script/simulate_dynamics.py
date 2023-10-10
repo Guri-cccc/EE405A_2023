@@ -33,10 +33,10 @@ class SimulateStep(object):
         '''
         Initial conditions
         '''
-        self.x0          = 0.
-        self.y0          = 0.
-        self.yaw0        = 0.
-        self.vx0         = 0.
+        self.x0          =  0.
+        self.y0          = -0.5
+        self.yaw0        =  0.
+        self.vx0         =  0.
 
         '''
         Parameters (RC platform)
@@ -292,7 +292,7 @@ class SimulateStep(object):
         ego_model_marker.color.g = 0.7
         ego_model_marker.color.b = 0.7
 
-        ego_model_marker.mesh_resource = "package://eurecarr_vehicle_sim/models/car.dae"
+        ego_model_marker.mesh_resource = "package://simple_vehicle_sim/models/car.dae"
 
         self.ego_model_marker_pub.publish(ego_model_marker)
 

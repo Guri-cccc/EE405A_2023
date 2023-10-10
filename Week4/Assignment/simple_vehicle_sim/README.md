@@ -1,38 +1,66 @@
-# eurecarr_vehicle_sim
+# simple_vehicle_sim
 
 A simple ROS based car dynamics simulator.
 
-## Download the Code
+## Install ROS
 
-Copy & paste this package at your catkin workspace (~/catkin_ws).
+Follow either of the following.
+
+(Skip this if you already has ROS environment.)
+
+### Official Documentation
+
+`Noetic` with `Ubuntu 20.04` is recommended.\
+Reference: http://wiki.ros.org/noetic/Installation/Ubuntu
+
+### Convenience Install Script
+Using scripts located at `etc/` of this repository, depending on you Ubuntu version, run
+
+- Ubuntu 20.04
+> `sudo chmod 755 ./install_ros_noetic && bash ./install_ros_noetic.sh`
+- Ubuntu 18.04
+> `sudo chmod 755 ./install_ros_melodic && bash ./install_ros_melodic.sh`
+- Ubuntu 16.04
+> `sudo chmod 755 ./install_ros_kinetic && bash ./install_ros_kinetic.sh`
+
+Note, aliases are setup in your `~/.bashrc`.\
+To edit, run `gedit ~/.bashrc`.
+
+## Download the Code
 
 Run the following command to install all ROS dependencies for the `src/` directory.
 ```
 cd ~/catkin_ws
-rosdep install --from-paths src --ignore-src -r -y
+rosdep install --from-paths src -r -y
 ```
 
 ## Install Python Dependencies
 
 ```
+pip3 install numpy --user
 pip2 install numpy --user
 ```
-Note, ROS (melodic) runs with `python 2.x`
+Note, ROS (~melodic) runs with `python 2.x`
 
+## Permission setting
+```
+if you copy 'Assignment' directory in your catkin_ws/src, then
+
+cd ~/catkin_ws/src/Assignment/simple_vehicle_sim/scripts
+chmod 777 simulate_dynamics.py
+
+cd ~/catkin_ws/src/Assignment/waypoint_follower/scripts
+chmod 777 controller.py  wpt_loader.py
+```
 
 ## Running the Simulator
 
-Open a terminal and launch visualization.
+Open a terminal and launch the simulation.
 ```
-roslaunch eurecarr_vehicle_sim simVis.launch
-```
-
-In another terminal, run the node.
-```
-rosrun eurecarr_vehicle_sim simulate_dynamics.py
+roslaunch simple_vehicle_sim run_sim.launch
 ```
 
-> If the terminal cannot auto-complete the package (`eurecarr_vehicle_sim`), run the following and try again.
+> If the terminal cannot auto-complete the package (`simple_vehicle_sim`), run the following and try again.
 > ```
 > cd ~/catkin_ws
 > rospack profile
@@ -40,7 +68,6 @@ rosrun eurecarr_vehicle_sim simulate_dynamics.py
 
 If everything is successfull, you should see the following.
 - ROS node rviz
-> The vehicle is moved because of the initial speed in x direction.\
 > ![rviz](etc/dynamics_sim_rviz.png)
 
 - ROS node graph

@@ -4,8 +4,8 @@
 
 
 echo ""
-echo "[Note] Target OS version  >>> Ubuntu 18.04.x (Bionic) or Linux Mint 18.x"
-echo "[Note] Target ROS version >>> ROS Melodic Morenia"
+echo "[Note] Target OS version  >>> Ubuntu 20.04.x (focal) or Linux Mint 20.x"
+echo "[Note] Target ROS version >>> ROS Noetic"
 echo "[Note] Catkin workspace   >>> $HOME/catkin_ws"
 echo ""
 echo "PRESS [ENTER] TO CONTINUE THE INSTALLATION"
@@ -13,13 +13,12 @@ echo "IF YOU WANT TO CANCEL, PRESS [CTRL] + [C]"
 read
 
 echo "[Set the target OS, ROS version and name of catkin workspace]"
-name_os_version=${name_os_version:="bionic"}
-name_ros_version=${name_ros_version:="melodic"}
+name_os_version=${name_os_version:="focal"}
+name_ros_version=${name_ros_version:="noetic"}
 name_catkin_workspace=${name_catkin_workspace:="catkin_ws"}
 
 echo "[Update the package lists and upgrade them]"
 sudo apt-get update -y
-sudo apt-get upgrade -y
 
 echo "[Install build environment, the chrony, ntpdate and set the ntpdate]"
 sudo apt-get install -y chrony ntpdate build-essential
@@ -47,7 +46,6 @@ fi
 
 echo "[Update the package lists and upgrade them]"
 sudo apt-get update -y
-sudo apt-get upgrade -y
 
 echo "[Install the ros-desktop-full and all rqt plugins]"
 sudo apt-get install -y ros-$name_ros_version-desktop-full ros-$name_ros_version-rqt-*
@@ -67,7 +65,7 @@ catkin_init_workspace
 cd $HOME/$name_catkin_workspace
 catkin_make
 
-echo "[Set the ROS evironment]"
+echo "[Set the ROS evironment in '.bashrc' (skip this if you don't need it)]"
 sh -c "echo \"alias eb='nano ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias sb='source ~/.bashrc'\" >> ~/.bashrc"
 sh -c "echo \"alias gs='git status'\" >> ~/.bashrc"

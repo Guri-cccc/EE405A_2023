@@ -1,0 +1,8 @@
+<launch>
+  <!-- Visualization -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_vehicle_sim)/cfg/dynamics_simulation.rviz" />
+  
+  <!-- Simulating vehicle model -->
+  <node name="simple_vehicle_sim" pkg="simple_vehicle_sim" type="simulate_dynamics.py" args="-d $(find simple_vehicle_sim)/cfg/dynamics_simulation.rviz" />
+</launch>
+

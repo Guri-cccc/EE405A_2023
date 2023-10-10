@@ -39,6 +39,7 @@ while not rospy.is_shutdown():
 
     msg_wpts.id = 0
     msg_wpts.type = Marker.SPHERE_LIST
+    msg_wpts.lifetime = rospy.Duration(1.5) # longer than rospy.Rate()
 
     # POINTS markers use x and y scale for width/height respectively
     msg_wpts.scale.x = 0.1

@@ -1,7 +1,7 @@
 '''
-@author : USRG(Unmanned Systems Research Group) @ KAIST
-@date   : 2021-03
-@brief  : The dynamics class for simple car dynamics simulation.
+@author : Hyunki Seong (hynkis@kaist.ac.kr)
+@date   : 2023-05
+@brief  : A class for simplified vehicle model simulation.
 '''
 import numpy as np
 
