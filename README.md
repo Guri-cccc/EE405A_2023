@@ -57,9 +57,14 @@ KAIST EE405A 2023
 ## Week 8 - Midterm exam week
  
 ## Week 9 - Visual SLAM
-<!-- [Lecture Note Week9](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
+[Lecture Note Week9](week9/[EE405A]Visual_navigation.pdf) <br/>
+[ORB SLAM ROS github]([https://github.com/Guri-cccc/EE405A-2023-F1-simulation.git](https://github.com/yongeePark/ORB_SLAM3_ROS_Interface.git))
 - Visual Odometry
-- ORB-SLAM
+  - ORB-SLAM
+- TFs in car like robots
+  - TFs for perception
+  - TFs for localization
+- Waypoints for global path planning
  
 ## Week 10 - Perception (1)
 <!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
