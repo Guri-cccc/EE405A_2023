@@ -90,7 +90,7 @@ KAIST EE405A 2023
     - IPM (Inverse Perspective Mapping)
     - RGB-point cloud
     - Cost map generation
-    - 
+  
 ## Week 13 - Strategy for Exploration
 <!-- [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - Strategy for exploration
