@@ -10,3 +10,9 @@
 [submodule "Week03/EE405A-2023-F1-simulation"]
 	path = Week03/EE405A-2023-F1-simulation
 	url = https://github.com/Guri-cccc/EE405A-2023-F1-simulation.git
+[submodule "Week11/node_recorder"]
+	path = Week11/node_recorder
+	url = https://github.com/hynkis/node_recorder.git
+[submodule "Week11/depthImage2pointCloud"]
+	path = Week11/depthImage2pointCloud
+	url = https://github.com/Guri-cccc/depthImage2pointCloud
