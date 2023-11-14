@@ -1,3 +1,6 @@
+[submodule "Week11/depthImage2pointCloud"]
+	path = Week11/depthImage2pointCloud
+	url = https://github.com/Guri-cccc/depthImage2pointCloud.git
 [submodule "Week10/motion_primitives_planner"]
 	path = Week10/motion_primitives_planner
 	url = https://github.com/hynkis/motion_primitives_planner.git
