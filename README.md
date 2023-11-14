@@ -46,13 +46,15 @@ KAIST EE405A 2023
 ## Week 8 - Midterm exam week
 
 ## Week 9 - Autonomous system configuration
-<!-- - [Hardware configuration](https://www.dropbox.com/s/sju9q2fn8crvdl6/%5BEE405A%202022%5D%20Hardware_Configuration_for_RC_Car_Platform.pdf?dl=0)
-    - Hardware architecture
-    - Electronics
-    - Chassis -->
+[Lecture Note Week10](Week09/[EE405A]Autonomous_system_configuration.pdf) <br/>
+- Autonomous System
+- Software Configuration
+- Hardware Configuration
     
 ## Week 10 - Motion Planning
-<!-- [Lecture Note Week6](https://www.dropbox.com/s/yi5amtnppyxztj5/%5BEE405A%5D%20Mapping%26Localization.pdf?dl=0) -->
+[Lecture Note Week10](Week10/[EE405A]map_generation_planning.pdf) <br/>
+[Local Costmap Generator](https://github.com/hynkis/local_costmap_generator) <br/>
+[Motion Planner](https://github.com/hynkis/motion_primitives_planner) <br/>
 - Occupancy grid map
 - Cost map generation
 - Collision checking
@@ -68,7 +70,8 @@ KAIST EE405A 2023
 ## Week 11 - Visual SLAM
 [Lecture Note Week9](Week11/[EE405A]Visual_navigation.pdf) <br/>
 [ORB SLAM ROS github](https://github.com/yongeePark/ORB_SLAM3_ROS_Interface.git) <br/>
-[depthImagetoPointCloud](https://github.com/Guri-cccc/depthImage2pointCloud)
+[depthImagetoPointCloud](https://github.com/Guri-cccc/depthImage2pointCloud) <br/>
+[Node Recorder](https://github.com/hynkis/node_recorder) <br/>
 
 - Visual Odometry
   - ORB-SLAM
