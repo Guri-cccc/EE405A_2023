@@ -1,0 +1,9 @@
+[submodule "Week10/motion_primitives_planner"]
+	path = Week10/motion_primitives_planner
+	url = https://github.com/hynkis/motion_primitives_planner.git
+[submodule "Week10/local_costmap_generator"]
+	path = Week10/local_costmap_generator
+	url = https://github.com/hynkis/local_costmap_generator.git
+[submodule "Week03/EE405A-2023-F1-simulation"]
+	path = Week03/EE405A-2023-F1-simulation
+	url = https://github.com/Guri-cccc/EE405A-2023-F1-simulation.git
