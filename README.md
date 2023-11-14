@@ -31,20 +31,31 @@ KAIST EE405A 2023
     - Geometry for lateral vehicle control
     - Lateral controller based on Pure Pursuit & Stanley Method
 
-## Week 5 - Hardware & Software Configuration
+## Week 5 - Hardware & Software Configuration (1)
 <!-- - [Hardware configuration](https://www.dropbox.com/s/sju9q2fn8crvdl6/%5BEE405A%202022%5D%20Hardware_Configuration_for_RC_Car_Platform.pdf?dl=0)
     - Hardware architecture
     - Electronics
     - Chassis -->
 
-## Week 6 - Motion Planning (1)
+## Week 6 - Hardware & Software Configuration (2)
+<!-- - [Hardware configuration](https://www.dropbox.com/s/sju9q2fn8crvdl6/%5BEE405A%202022%5D%20Hardware_Configuration_for_RC_Car_Platform.pdf?dl=0)
+    - Hardware architecture
+    - Electronics
+    - Chassis -->
+
+## Week 8 - Midterm exam week
+
+## Week 9 - Autonomous system configuration
+<!-- - [Hardware configuration](https://www.dropbox.com/s/sju9q2fn8crvdl6/%5BEE405A%202022%5D%20Hardware_Configuration_for_RC_Car_Platform.pdf?dl=0)
+    - Hardware architecture
+    - Electronics
+    - Chassis -->
+    
+## Week 10 - Motion Planning
 <!-- [Lecture Note Week6](https://www.dropbox.com/s/yi5amtnppyxztj5/%5BEE405A%5D%20Mapping%26Localization.pdf?dl=0) -->
 - Occupancy grid map
 - Cost map generation
 - Collision checking
-
-## Week 7 - Motion Planning (2)
-<!-- [Lecture Note Week7](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - Motion planning methods
   - Graph-based approaches
   - Sampling-based approaches
@@ -53,10 +64,8 @@ KAIST EE405A 2023
   - A* algorithm
   - Rapidly Exploring Random Tree (RRT)
   - Motion primitive-based path planning
-
-## Week 8 - Midterm exam week
- 
-## Week 9 - Visual SLAM
+    
+## Week 11 - Visual SLAM
 [Lecture Note Week9](week9/[EE405A]Visual_navigation.pdf) <br/>
 [ORB SLAM ROS github]([https://github.com/Guri-cccc/EE405A-2023-F1-simulation.git](https://github.com/yongeePark/ORB_SLAM3_ROS_Interface.git))
 - Visual Odometry
@@ -66,7 +75,7 @@ KAIST EE405A 2023
   - TFs for localization
 - Waypoints for global path planning
  
-## Week 10 - Perception (1)
+## Week 12 - Perception
 <!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 - LiDAR-based perception
     - Object detection
@@ -74,25 +83,20 @@ KAIST EE405A 2023
 - Camera-based perception
     - Object detection
     - Segmentation
- 
-## Week 11 - Perception (2)
-<!-- [Lecture Note Week11](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- Depth estimation using vision
+    - Depth estimation using vision
     - Stereo vision
     - Other methods
 - Post-processing
     - IPM (Inverse Perspective Mapping)
     - RGB-point cloud
     - Cost map generation
- 
-## Week 12 - Strategy for racing
+    - 
+## Week 13 - Strategy for Exploration
 <!-- [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- Indy autonomous challenge
+- Strategy for exploration
 
-## Week 13 - Final project preparation (racing)
+## Week 14 - Final project preparation (Exploration)
 
-## Week 14 - Final project preparation (racing)
+## Week 15 - Final Race
 
-## Week 15 - Final race
-
-## Week 15 - Final exam week
+## Week 16 - Final exam week
