@@ -16,3 +16,6 @@
 [submodule "Week11/depthImage2pointCloud"]
 	path = Week11/depthImage2pointCloud
 	url = https://github.com/Guri-cccc/depthImage2pointCloud
+[submodule "Week13/true_rt_tag"]
+	path = Week13/true_rt_tag
+	url = https://github.com/MinSungjae/true_rt_tag
