@@ -1,2 +1,0 @@
-int32 class_id
-sensor_msgs/Image save_img
