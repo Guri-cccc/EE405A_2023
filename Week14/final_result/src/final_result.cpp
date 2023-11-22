@@ -35,7 +35,13 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             cv_bridge::CvImagePtr cv_ptr;
             cv_ptr = cv_bridge::toCvCopy(msg->save_img, sensor_msgs::image_encodings::BGR8);
             std::stringstream filename;
-            filename << target_class_id << ".jpg";
+
+            /*
+                example: user name = hyungjoo (you can check your device information)
+                example: workspace name = catkin_ws
+            */
+            filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << ".jpg";
+                            
                     
             std::cout << filename.str() << std::endl;
 
@@ -51,7 +57,11 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
                 std::stringstream filename;
                 filename << target_class_id << ".jpg";
                         
-                std::cout << filename.str() << std::endl;
+                /*
+                    example: user name = hyungjoo (you can check your device information)
+                    example: workspace name = catkin_ws
+                */
+                filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << ".jpg";
 
                 cv::imwrite(filename.str(), cv_ptr->image);
                 detected_num_list.push_back(target_class_id);
