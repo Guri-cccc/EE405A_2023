@@ -68,7 +68,7 @@ KAIST EE405A 2023
   - Motion primitive-based path planning
     
 ## Week 11 - Visual SLAM
-[Lecture Note Week9](Week11/[EE405A]Visual_navigation.pdf) <br/>
+[Lecture Note Week11](Week11/[EE405A]Visual_navigation.pdf) <br/>
 [ORB SLAM ROS github](https://github.com/yongeePark/ORB_SLAM3_ROS_Interface.git) <br/>
 [depthImagetoPointCloud](https://github.com/Guri-cccc/depthImage2pointCloud) <br/>
 [Node Recorder](https://github.com/hynkis/node_recorder) <br/>
@@ -81,7 +81,7 @@ KAIST EE405A 2023
 - Waypoints for global path planning
  
 ## Week 12 - Perception
-<!-- [Lecture Note Week10](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
+[Lecture Note Week12](Week12/[EE405A]Perception.pdf)
 - LiDAR-based perception
     - Object detection
     - Segmentation
@@ -96,9 +96,11 @@ KAIST EE405A 2023
     - RGB-point cloud
     - Cost map generation
   
-## Week 13 - Strategy for Exploration
+## Week 13 - Final project for exploration
 <!-- [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
-- Strategy for exploration
+[Apriltag Localization](https://github.com/MinSungjae/true_rt_tag/tree/123236c3d92a2e95319277fc8653411e7c609a16) <br/>
+[Detected Image Saver](Week13/detected_image_saver)
+
 
 ## Week 14 - Final project preparation (Exploration)
 
