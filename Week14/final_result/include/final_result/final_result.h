@@ -22,7 +22,6 @@ class EE405A_FINAL_RESULT
     private:
       ros::NodeHandle node_handle_;
       
-      ros::Subscriber class_id;
       ros::Subscriber target_detection_img;
 
       void initPublisher();
