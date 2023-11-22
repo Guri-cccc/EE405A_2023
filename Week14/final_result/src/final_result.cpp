@@ -58,7 +58,7 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             }
             else
             {
-                std::cout << "You Already Found " << target_class_id << ", so Waiting the Next Number" << std::endl;
+                // std::cout << "You Already Found " << target_class_id << ", so Waiting the Next Number" << std::endl;
             }
         }
         
