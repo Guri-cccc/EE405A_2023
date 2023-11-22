@@ -28,6 +28,8 @@ void EE405A_FINAL_RESULT::initSubscriber()
 void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_image::ConstPtr& msg)
 {
     target_class_id = msg->class_id;
+    double target_x = msg->x_pose;
+    double target_y = msg->y_pose;
     try
     {
         if(detected_num_list.empty())
@@ -36,11 +38,13 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             cv_ptr = cv_bridge::toCvCopy(msg->save_img, sensor_msgs::image_encodings::BGR8);
             std::stringstream filename;
 
+            double final_x = floor(target_x1*100.0)/100.0;
+            double final_y = floor(target_y1*100.0)/100.0;
             /*
                 example: user name = hyungjoo (you can check your device information)
                 example: workspace name = catkin_ws
             */
-            filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << ".jpg";
+            filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
                             
                     
             std::cout << filename.str() << std::endl;
@@ -57,12 +61,14 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
                 std::stringstream filename;
                 filename << target_class_id << ".jpg";
                         
+                double final_x = floor(target_x1*100.0)/100.0;
+                double final_y = floor(target_y1*100.0)/100.0;
                 /*
                     example: user name = hyungjoo (you can check your device information)
                     example: workspace name = catkin_ws
                 */
-                filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << ".jpg";
-
+                filename << "/home/(user name)/(workspace name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+                
                 cv::imwrite(filename.str(), cv_ptr->image);
                 detected_num_list.push_back(target_class_id);
             }
