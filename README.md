@@ -100,6 +100,8 @@ KAIST EE405A 2023
 <!-- [Lecture Note Week12](https://www.dropbox.com/s/7sghehdu4p768gt/%5BEE405%5D%20Gazebo.pdf?dl=0) -->
 [Apriltag Localization](https://github.com/MinSungjae/true_rt_tag/tree/123236c3d92a2e95319277fc8653411e7c609a16) <br/>
 [Detected Image Saver](Week13/detected_image_saver)
+[Lecture Note Week13](Week13/[EE405A]Final Project Preparation.pdf)
+
 
 
 ## Week 14 - Final project preparation (Exploration)
