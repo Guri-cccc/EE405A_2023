@@ -19,3 +19,6 @@
 [submodule "Week13/true_rt_tag"]
 	path = Week13/true_rt_tag
 	url = https://github.com/MinSungjae/true_rt_tag
+[submodule "Week13/qr_detector"]
+	path = Week13/qr_detector
+	url = https://github.com/MinSungjae/qr_detector
