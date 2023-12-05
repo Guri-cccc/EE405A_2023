@@ -45,7 +45,7 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             example: user name = hyungjoo (you can check your device information)
             example: workspace name = catkin_ws
             */
-            filename << "/home/(user_name)/(workspace_name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+            filename << "/home/(user_name)/(workspace_name)/src/detected_image_saver/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
 
             std::cout << filename.str() << std::endl;
 
@@ -67,7 +67,7 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
                 example: user name = hyungjoo (you can check your device information)
                 example: workspace name = catkin_ws
                 */
-                filename << "/home/(user_name)/(workspace_name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+                filename << "/home/(user_name)/(workspace_name)/src/detected_image_saver/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
 
                         
                 std::cout << filename.str() << std::endl;
