@@ -5,6 +5,7 @@ EE405A_FINAL_RESULT::EE405A_FINAL_RESULT()
 {
     initPublisher();
     initSubscriber();
+    package_path = ros::package::getPath("final_result");
 
     ROS_INFO("WAITING TO SAVE IMAGE");
 }
@@ -37,6 +38,7 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             cv_bridge::CvImagePtr cv_ptr;
             cv_ptr = cv_bridge::toCvCopy(msg->save_img, sensor_msgs::image_encodings::BGR8);
             std::stringstream filename;
+            // std::string filename;
             
             double final_x = floor(target_x*100.0)/100.0;
             double final_y = floor(target_y*100.0)/100.0;
@@ -45,8 +47,8 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
             example: user name = hyungjoo (you can check your device information)
             example: workspace name = catkin_ws
             */
-            filename << "/home/(user_name)/(workspace_name)/src/detected_image_saver/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
-
+            filename << package_path + "/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+            // filename << "/home/(user_name)/(workspace_name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
             std::cout << filename.str() << std::endl;
 
             cv::imwrite(filename.str(), cv_ptr->image);
@@ -67,7 +69,8 @@ void EE405A_FINAL_RESULT::targetDetectionCallback(const final_result_msgs::save_
                 example: user name = hyungjoo (you can check your device information)
                 example: workspace name = catkin_ws
                 */
-                filename << "/home/(user_name)/(workspace_name)/src/detected_image_saver/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+               filename << package_path + "/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
+                // filename << "/home/(user_name)/(workspace_name)/src/final_result/results/" << target_class_id << "_" << final_x << "_" << final_y << ".jpg";
 
                         
                 std::cout << filename.str() << std::endl;
