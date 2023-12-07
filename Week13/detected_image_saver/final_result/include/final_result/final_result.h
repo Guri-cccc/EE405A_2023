@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <ros/package.h>
+#include <string>
 #include <sstream>
 #include <std_msgs/String.h>
 #include <sensor_msgs/Image.h>
@@ -23,7 +24,7 @@ class EE405A_FINAL_RESULT
       ros::NodeHandle node_handle_;
 
       ros::Subscriber target_detection_img;
-
+      std::string package_path;
       void initPublisher();
       void initSubscriber();
       void targetDetectionCallback(const final_result_msgs::save_image::ConstPtr& msg);
